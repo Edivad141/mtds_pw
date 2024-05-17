@@ -14,15 +14,14 @@ body, html {
     overflow-x: auto;
     width: 100%;
     background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 20px 0;
 }
 
 .horizontal-scroll-container {
     display: flex;
     width: max-content; /* Ensures the container is only as wide as its content */
-    height: 50vh; /* Adjust height as needed */
     align-items: center;
     scroll-snap-type: x mandatory;
-    padding: 20px;
 }
 
 .horizontal-scroll-item {
@@ -48,8 +47,8 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-    height: auto; /* Adjusted to maintain the aspect ratio */
-    border-radius: 10%;
+    height: 200px; /* Set height to maintain rectangular aspect ratio */
+    border-radius: 10px; /* Small border radius for a rectangle */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -84,3 +83,4 @@ body, html {
     margin: 0 auto;
     line-height: 1.6;
 }
+
