@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="horus.css">
     <style>
         .horizontal-trigger {
-            height: calc(100% - 100vh);
+            height: 100vh; /* Adjust height to trigger the horizontal scroll */
         }
         .horizontal-section {
             display: flex;
             overflow: hidden;
             position: relative;
+            height: 100vh; /* Adjust height for full-screen horizontal section */
         }
         .list {
             display: flex;
@@ -71,7 +72,7 @@
     <script>
         // Register the ScrollTrigger plugin
         gsap.registerPlugin(ScrollTrigger);
-        
+
         // Calculate the scroll distance
         let horizontalItem = document.querySelectorAll(".horizontal-scroll-item");
         let horizontalSection = document.querySelector(".horizontal-section");
@@ -128,5 +129,3 @@
     </script>
 </body>
 </html>
-
-
