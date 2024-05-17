@@ -6,8 +6,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
     color: #333;
 }
 
@@ -20,7 +21,6 @@ body {
     max-width: 500px;
     width: 100%;
     transition: box-shadow 0.3s;
-    margin-top: 20px; /* Add margin-top to create space between sections */
 }
 
 .container:hover {
@@ -67,5 +67,46 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2em;
-    transition: background-color 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005f8b;
+}
+
+#result, #book, #description {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#result.show, #book.show, #description.show {
+    opacity: 1;
+}
+
+#result {
+    font-size: 1.5em;
+    color: #007bb5;
+    margin-bottom: 10px;
+}
+
+#book {
+    font-size: 1.3em;
+    color: #005f8b;
+}
+
+#description {
+    font-size: 1.1em;
+    color: #333;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
 
